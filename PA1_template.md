@@ -24,6 +24,11 @@ total_steps_per_day<-aggregate(steps~date,activity,sum,na.rm=TRUE)
 hist(total_steps_per_day$steps,xlab="Total steps",ylab="Frequency",main="Total steps per day")
 ```
 
+
+
+
+
+
 3. Mean and median number of steps taken each day
 
 ```{r mean and median}
