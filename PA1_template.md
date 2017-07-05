@@ -49,6 +49,8 @@ plot(mean_steps_per_day$interval,mean_steps_per_day$steps,type="l",
      main="Mean steps per day",xlab="Interval",ylab="Average steps")
 ```
 
+![plot of figure8](instructions_fig/figure8.png) 
+
 5. The 5-minute interval that, on average, contains the maximum number of steps
 
 ```{r max number of steps}
@@ -71,6 +73,8 @@ after_activity<-na.omit(activity)
 total_steps_except_NA<-aggregate(steps~date,after_activity,sum,na.rm=TRUE)
 hist(total_steps_except_NA$steps,xlab="Total steps",main="Total steps per day")
 ```
+
+![plot of figure12](instructions_fig/figure12.png) 
 
 #### Are there differences in activity patterns between weekdays and weekends?
 
@@ -97,13 +101,13 @@ weekend_activity<-subset(days_activity,state=="weekend")
 weekday<-aggregate(steps~interval,weekday_activity,mean)
 plot(weekday$interval,weekday$steps,type="l",
      main="Mean steps per day on weekday",xlab="Interval",ylab="Average steps")
+     
+![plot of figure15-1](instructions_fig/figure15-1.png) 
+     
 weekend<-aggregate(steps~interval,weekend_activity,mean)
 plot(weekend$interval,weekend$steps,type="l",
      main="Mean steps per day on weekend",xlab="Interval",ylab="Average steps")
 
 ```
 
-
-
-
-
+![plot of figure15-2](instructions_fig/figure15-2.png) 
