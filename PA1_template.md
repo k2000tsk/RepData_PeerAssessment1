@@ -26,9 +26,6 @@ hist(total_steps_per_day$steps,xlab="Total steps",ylab="Frequency",main="Total s
 
 
 
-
-
-
 3. Mean and median number of steps taken each day
 
 ```{r mean and median}
