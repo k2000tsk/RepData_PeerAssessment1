@@ -102,12 +102,11 @@ weekday<-aggregate(steps~interval,weekday_activity,mean)
 plot(weekday$interval,weekday$steps,type="l",
      main="Mean steps per day on weekday",xlab="Interval",ylab="Average steps")
      
-![plot of figure15-1](instructions_fig/figure15-1.png) 
-     
 weekend<-aggregate(steps~interval,weekend_activity,mean)
 plot(weekend$interval,weekend$steps,type="l",
      main="Mean steps per day on weekend",xlab="Interval",ylab="Average steps")
 
 ```
-
+ 
+![plot of figure15-1](instructions_fig/figure15-1.png)
 ![plot of figure15-2](instructions_fig/figure15-2.png) 
